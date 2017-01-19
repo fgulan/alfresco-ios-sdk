@@ -132,7 +132,7 @@ NSString * const kCMISExceptionVersioning              = @"versioning";
     }
     else {
         // use the default session configuration, cache settings and timeout will be provided by the request object
-        sessionConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];
+        sessionConfiguration = [NSURLSessionConfiguration ephemeralSessionConfiguration];
     }
     
     // create session and task

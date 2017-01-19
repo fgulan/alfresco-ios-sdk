@@ -132,7 +132,7 @@
     //       by the CMIS library, background mode was setup at session creation time
     
     // create session and task
-    self.URLSession = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]
+    self.URLSession = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration ephemeralSessionConfiguration]
                                                     delegate:self
                                                delegateQueue:nil];
     self.sessionTask = [self.URLSession dataTaskWithRequest:urlRequest];
